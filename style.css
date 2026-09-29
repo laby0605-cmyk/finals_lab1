@@ -1,0 +1,151 @@
+/* General setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff8ed;
+    color: #49352a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #fbe6d0;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #e89a5b;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #c45f22;
+    margin-bottom: 5px;
+}
+
+header div p {
+    color: #765544;
+    font-size: 17px;
+}
+
+header > p {
+    color: #8a634c;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 35px auto;
+    flex: 1;
+}
+
+/* Sections */
+section {
+    background-color: #fffdf9;
+    border: 1px solid #f0c9a5;
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 12px rgba(117, 74, 45, 0.08);
+}
+
+section h2 {
+    color: #c45f22;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+section p {
+    color: #765f50;
+    line-height: 1.6;
+}
+
+/* Start button */
+button {
+    background-color: #d97732;
+    color: white;
+    border: none;
+    padding: 13px 27px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bd6125;
+}
+
+/* Result card */
+.result-card {
+    background-color: #fff4e5;
+    border: 1px solid #f0c9a5;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #efd7c2;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item span:first-child {
+    color: #856b59;
+}
+
+.result-item span:last-child {
+    color: #49352a;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #fbe6d0;
+    color: #765544;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+    border-top: 1px solid #e8bd96;
+}
+
+footer p:first-child {
+    margin-bottom: 5px;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .result-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
