@@ -43,7 +43,7 @@ evaluationButton.addEventListener('click', () => {
         if (nameInput === null) return;
 
         if (nameInput.trim() === '') {
-            alert('Invalid Input! Please Enter a Valid Name');
+            alert('Invalid Input! Name cannot be empty. Please enter your name.');
         }
 
     } while (nameInput.trim() === '');
