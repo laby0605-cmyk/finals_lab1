@@ -93,4 +93,3 @@ evaluationButton.addEventListener('click', () => {
     remarksDisplay.textContent = remarks;
 
 });
-
